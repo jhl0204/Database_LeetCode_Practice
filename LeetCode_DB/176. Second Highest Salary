@@ -1,0 +1,50 @@
+### Number #176
+
+### Question:
+Write a SQL query to get the second highest salary from the Employee table.
+
+
+### Solution(s):
+
+**Potential Solution 1**
+
+```SQL
+SELECT MAX(Salary) AS SecondHighestSalary
+FROM Employee
+WHERE Salary < (SELECT MAX(Salary) FROM Employee)
+```
+
+**Problem:**
+
+Works for the second highest salary.
+However, won't be scalable to other "***n<sup>th<sup>*** highest" types of questions.
+
+
+**Potential Solution 2**
+
+```SQL
+SELECT DISTINCT Salary AS SecondHighestSalary
+FROM Employee
+ORDER BY Salary DESC
+LIMIT 1 OFFSET 1
+```
+
+**Problem:**
+Above query will fail if there is only one record in the table! (if there is no such thing as ***second highest***)
+
+**Ideal Solution**
+
+
+```SQL
+SELECT
+    (SELECT DISTINCT Salary
+        FROM Employee
+        ORDER BY 1 DESC
+        LIMIT 1
+        OFFSET 1) AS SecondHighestSalary
+```
+
+
+### Notes / Hints:
+
+Using **DISTINCT** to return unique salary values and also using subqueries to deal with null cases.

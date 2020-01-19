@@ -1,0 +1,20 @@
+### Number #175
+
+### Question:
+Write a SQL query for a report that provides the following information for each person in the Person table, ***regardless*** if there is an address for each of those people:
+
+`FirstName, LastName, City, State`
+
+
+### Solution(s):
+
+```SQL
+SELECT FirstName, LastName, City, State
+FROM Person p
+LEFT JOIN Address a
+ON p.PersonId = a.PersonId  
+```
+
+
+### Notes / Hints:
+Because the question specifically states 'REGARDLESS', should use **LEFT OUTER JOIN** (which is same as **LEFT JOIN**), in order to account for cases where there is no address information for every person.
