@@ -10,9 +10,9 @@
 ### Database
 _____
 
-|   Leetcode #  |  Question  |  Solution    | Difficulty | Notes | 
+|   Leetcode #  |  Question  |  LeetCode Solution   | My Solution | Difficulty | Notes | 
 |:----:|:---:|:---:|:---:|:---:|
-|  175  | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)  | [Solution]()  |    Easy    |     |
+|  175  | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)  | [LC Solution](https://leetcode.com/articles/combine-two-tables/)  |  [Solution]()   |   Easy    |     |
 
 
 
