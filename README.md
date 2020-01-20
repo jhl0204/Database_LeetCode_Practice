@@ -13,7 +13,8 @@ _____
 |   Leetcode #  |  Question  |  LeetCode Solution   | My Solution | Difficulty | Notes | 
 |:----:|:---:|:---:|:---:|:---:|:---:|
 |  175  | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)  | [LC Solution](https://leetcode.com/articles/combine-two-tables/)  |  [Solution]()   |   Easy    |     |
-|   |
+|  176  | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)  | [LC Solution](https://leetcode.com/articles/second-highest-salary/)  |  [Solution]()   |   Easy    |     |
+
 
 
 
